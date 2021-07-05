@@ -1,0 +1,56 @@
+
+<html>
+    <head>
+        <title>Calculator</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="calculator.css">
+        <script src="Script/jquery-3.6.0.min.js"></script>
+        <script src="Script/calculator.js"></script>
+        
+    </head>
+    <body>
+        <div id="calc_container">
+            <h3 id="calc_heading">Calculator</h3>
+            <p id="err_msg"></p>
+            <div id="calc">
+                <div class="displays_div font-lemon">
+                                <input type="text" id="display" class="font-lemon" /> <!-- Add readonly if wanted-->
+                                <p id="result"></p>
+                </div>  
+                <div id="inputs">  
+                    <table >
+                            <tr >
+                                <td><button type="button" id="op_button" class="calc_button font-lemon" onclick='showDisplay("+")'>+ </button></td>
+                                <td><button type="button" id="op_button" class="calc_button font-lemon" onclick='showDisplay("-")'>-</button></td>
+                                <td><button type="button" id="op_button" class="calc_button font-lemon" onclick='showDisplay("*")'>x</button></td>
+                                <td><button type="button" id="clear" class="calc_button font-lemon" onclick='clr()'>AC</button></td>
+                            </tr>
+                            <tr>
+                                <td><button type="button" class="calc_button font-lemon" onclick='showDisplay("1")' >1</button></td>
+                                <td><button type="button" class="calc_button font-lemon" onclick='showDisplay("2")'>2</button></td>
+                                <td><button type="button" class="calc_button font-lemon" onclick='showDisplay("3")'>3</button></td>
+                                <td id="eq_td" rowspan="4"><button type="button" id="equal_button" class="calc_button font-lemon" onclick='calculate()'>=</button></td>
+                            </tr>
+                            <tr>
+                                <td><button type="button" class="calc_button font-lemon" onclick='showDisplay("4")'>4</button></td>
+                                <td><button type="button" class="calc_button font-lemon" onclick='showDisplay("5")'>5</button></td>
+                                <td><button type="button" class="calc_button font-lemon" onclick='showDisplay("6")'>6</button></td>
+                            </tr>
+                            <tr>
+                                <td><button type="button" class="calc_button font-lemon" onclick='showDisplay("7")'>7</button></td>
+                                <td><button type="button" class="calc_button font-lemon" onclick='showDisplay("8")'>8</button></td>
+                                <td><button type="button" class="calc_button font-lemon" onclick='showDisplay("9")'>9</button></td>
+                            </tr>
+                            <tr>
+                                <td><button type="button" class="calc_button font-lemon" onclick='showDisplay(".")'><b>.</b></button></td>
+                                <td><button type="button" class="calc_button font-lemon" onclick='showDisplay("0")'>0</button></td>
+                                <td><button type="button" id="op_button" class="calc_button font-lemon" onclick='showDisplay("/")'>/</button></td>   
+                            </tr>
+                    </table>
+                </div>  
+            </div>  
+        </div>
+    </body>
+</html>
