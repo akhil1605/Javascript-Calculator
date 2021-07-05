@@ -3,8 +3,8 @@ A basic javascript calculator
 
 Desktop View :
  
- ![Desktop View](./Result/Desktop View.PNG)
+ ![Desktop View](https://github.com/akhil1605/Javascript-Calculator//Result/Desktop View.PNG)
  
  Mobile View : 
  
- ![Mobile View](./Result/Mobile View.PNG)
+ ![Mobile View](https://github.com/akhil1605/Javascript-Calculator/Result/Mobile View.PNG)
